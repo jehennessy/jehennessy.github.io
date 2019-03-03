@@ -1,0 +1,329 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Santorini';
+    src: url('fonts/santoriniregular.woff') format('woff'),
+        url('fonts/santoriniregular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'monument_valley';
+    src: url('fonts/monument_valley_12-regular-webfont.woff2') format('woff2'),
+         url('fonts/monument_valley_12-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Styling */
+h1 {
+    font-family: 'Santorini';
+    font-size: 100px;
+}
+
+h2 {
+    font-family: 'monument_valley';
+    font-size: 87px;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    text-align: center;
+    background-image: linear-gradient(0deg, rgba(138, 132,140, 1), rgba(114, 94, 112, 1));
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.button a {
+    text-decoration: none;
+    color: #AFAAAA;
+}
+
+/* Hero */
+#hero-container {
+    background-image: linear-gradient(0deg,rgba(210,204,205,0.62),rgba(210,204,205,0.62)), url(images/CloudsAfterStorm.jpg);
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    padding-top: 15%;
+}
+
+#heading-container {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    color: #725E70;
+}
+
+
+/* About */
+#about-container {
+    background-color: #D2CCCD;
+    width: 100%;
+    height: 700px;
+    margin: 0;
+}
+
+#about-image-container {
+    width: 40%;
+    display: inline-block;
+    height: 700px;
+    margin: 0;
+}
+
+#about-image {
+    height: 700px;
+}
+#about-text-container {
+    width:50%;
+    height: 700px;
+    display: inline-block;
+    margin: 0;   
+    vertical-align: top;
+}
+
+#about-text-container h1 {
+    color: #4C3B48;
+    border-bottom: 2px solid #AFAAAA;
+}
+
+#about-text-container p {
+    color: #725E70;
+    margin: 15px 0 50px;
+}
+
+#about-social-container{
+    display: inline-block;
+    width: 40%;
+}
+
+#about-social-container a {
+    color: #9D9089;
+    font-size: 35px;
+    margin: 0 5px;
+}
+
+#resume-button-container {
+    display: inline-block;
+    width: 50%;
+}
+
+
+/* Work */
+#work-container {
+    width: 100%;
+    margin: 0;
+    height: 800px;
+}
+
+#work-title-container {
+    background-color: #9D9089;
+    height: 800px;
+    width: 40%;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    position: absolute;
+    
+}
+
+#work-title-container h1 {
+    color: #D2CCCD;
+    text-align: center;
+    margin: 20%;
+}
+
+
+#portfolio-container {
+    width: 60%;
+    display: inline-block;
+    height: 800px;
+    margin: 0;
+    overflow-x: scroll;
+    float: right;
+}
+
+.project {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    background-color: rgba(175, 170, 170, 0.76);
+    display: block;
+}
+
+.project-container {
+    padding: 25%;
+}
+
+.project-title {
+    color: ##4C3B48;
+    text-align: center;
+}
+
+#project-1 {
+    background-image: linear-gradient(0deg,rgba(175, 170, 170, 0.76),rgba(175, 170, 170, 0.76)), url(images/RickOnBike.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+#project-1:hover {
+    background-image: url(images/RickOnBike.jpg);
+    color: #D2CCCD;
+}
+
+#project-2 {
+    background-image: linear-gradient(0deg,rgba(175, 170, 170, 0.76),rgba(175, 170, 170, 0.76)), url(images/web-231.png);
+    background-size: cover;
+    width: 100%;
+}
+
+#project-2:hover {
+    background-image: url(images/web-231.png);
+    color: #D2CCCD;
+}
+
+#project-3 {
+    background-image: linear-gradient(0deg,rgba(175, 170, 170, 0.76),rgba(175, 170, 170, 0.76)), url(images/CloudsAfterStorm.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+#project-3:hover {
+    background-image: url(images/CloudsAfterStorm.jpg);
+    color: #D2CCCD;
+}
+
+#project-4 {
+    background-image: linear-gradient(0deg,rgba(175, 170, 170, 0.76),rgba(175, 170, 170, 0.76)), url(images/web-330.png);
+    background-size: cover;
+    width: 100%;
+}
+
+#project-4:hover {
+    background-image: url(images/web-330.png);
+    color: #D2CCCD;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Contact */
+#contact-container {
+    background-color: #725E70;
+    width: 100%;
+    height: 600px;
+}
+
+#contact-image-container {
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+#contact-image {
+    height: 600px;
+}
+
+#contact-info-container {
+    width: 69%;
+    height: 600px;
+    display: inline-block;
+    float: right;
+    margin: 0;
+    vertical-align: top;
+}
+
+#contact-heading-container {
+  margin: 20px 0;  
+}
+#contact-heading-container h1{
+    color: #8A848C;
+}
+
+#email-container {
+    margin-left: 250px;
+    color: #D2CCCD;
+}
+
+#email-container h4 a{
+    color: #D2CCCD;
+    text-decoration: none;
+}
+
+#contact-social-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#contact-social-container a {
+    color: #9D9089;
+    font-size: 35px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(0deg,rgba(210,204,205,0.62),rgba(210,204,205,0.62)), url(images/SceneAtIndianStateCaves.jpg);
+    background-size: cover;
+    padding: 50px 0;
+}
+
+#footer-heading-container h1 {
+    font-size: 48px;
+    color: #4C3B48;
+    margin-left: 50px;
+}
+
+#footer-social-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+}
+
+#footer-social-container a {
+    color: #4C3B48;
+    font-size: 35px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+#copyright-container {
+    text-align: center;
+    margin-top: 50px;
+    color: #4C3B48;
+}
