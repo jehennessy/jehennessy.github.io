@@ -5,11 +5,14 @@
 
         <!-- Font Awesome Link-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    
+
         <link rel="stylesheet" href="style.css">
-        
+
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet">
+
+        <!-- JavaScript -->
+        <script src="script.js"></script>
     </head>
 
     <body>
@@ -32,18 +35,18 @@
             <div id="about-text-container">
 
                 <h1>About</h1>
-            
-                <p>Hi, my name is Jordan Hennessy! I&#39;m a 26-year-old, INFJ, based in Omaha, Nebraska. 
-                    I currently am a Junior at Bellevue University, working towards a bachelors degree 
-                    in Web Development. In 2017, I received an associate degree in Media Generalist 
-                    (i.e. graphic design, animation, videography, photography and web design) from 
-                    Metropolitan Community College. Also, I am the Web Designer for Pixel Fire Marketing, 
-                    where I create websites for local businesses from contractors to craft stores. 
-                    If you haven&#39;t got the hint yet, I love to create! While I have a wide set of skills, 
-                    my favorite platforms to create on are web and video. I also have experience in social 
-                    media and email campaigns, helping businesses grow their online presence and drive traffic 
-                    to their website. In my free time, I enjoy being in nature, whether I&#39;m camping, kayaking, 
-                    hiking or just chilling in my hammock. I also appreciate a great cup of coffee! 
+
+                <p>Hi, my name is Jordan Hennessy! I&#39;m a 26-year-old, INFJ, based in Omaha, Nebraska.
+                    I currently am a Junior at Bellevue University, working towards a bachelors degree
+                    in Web Development. In 2017, I received an associate degree in Media Generalist
+                    (i.e. graphic design, animation, videography, photography and web design) from
+                    Metropolitan Community College. Also, I am the Web Designer for Pixel Fire Marketing,
+                    where I create websites for local businesses from contractors to craft stores.
+                    If you haven&#39;t got the hint yet, I love to create! While I have a wide set of skills,
+                    my favorite platforms to create on are web and video. I also have experience in social
+                    media and email campaigns, helping businesses grow their online presence and drive traffic
+                    to their website. In my free time, I enjoy being in nature, whether I&#39;m camping, kayaking,
+                    hiking or just chilling in my hammock. I also appreciate a great cup of coffee!
                 </p>
 
                 <div id="about-social-container">
@@ -55,7 +58,7 @@
                 </div>
 
                 <div id="resume-button-container" class="button">
-                    <a href="" target="_blank"><h4>Download Resume</h4></a>
+                    <a href="pdfs/JordanHennessyResume.pdf" target="_blank"><h4>Download Resume</h4></a>
                 </div>
 
             </div> <!-- end about text container-->
@@ -64,61 +67,406 @@
         <div id="work-container">
 
             <div id="work-title-container">
-                <h1>Work</h1>
+                <h1 id="work-title">Work</h1>
             </div>
 
             <div id="portfolio-container">
 
-                <div id="project-1" class="project">
-                    <div class="project-container">
+                <div class="close" id="close-pro-1" onclick="closeProject1()"></div>
+
+                <div id="project-1" class="project" onclick="openProject1()">
+
+                    <div class="project-container" id="project-1-container">
+
+
+                        <img src="images/RickOnBike.jpg" class="hidden project-image" id="project-1-image">
+
                         <h3 class="project-title">BioSite</h3>
-                        <p class="hidden"></p>
-                        <h4 class="hidden">Color Palette</h4>
-                        <img src="images/biosite-colors.png" alt="color palette for bioSite" class="hidden">
-                        <div class="button hidden">
-                            <a href="https://jehennessy.github.io/bioSite/" target="_blank"><h4>View Project</h4></a>
+
+                        <p class="hidden project-dis" id="project-1-text">
+                            The bioSite was created in the Fall of 2018. The subject is my friend Rick who loves riding motorcycles. Rick is one of the kindest people I know and I wanted to capture his fun, loving spirit in the design of this website.
+                        </p>
+
+                        <h4 class="hidden project-color-header" id="project-1-h4">Color Palette</h4>
+
+                        <img src="images/biosite-colors.png" alt="color palette for bioSite" class="hidden project-colors" id="project-1-color">
+
+                        <div id="button-container" class="hidden">
+
+                            <div class="button project-button" id="project-1-button1">
+
+                                <a href="https://jehennessy.github.io/bioSite/" target="_blank"><h4>View Project</h4></a>
+
+                            </div>
+
+                            <div class="button project-button" id="project-1-button2">
+
+                                <a href="pdfs/biosite-prototype.pdf" target="_blank"><h4>View Prototype</h4></a>
+                            </div>
+
                         </div>
-                        <div class="button hidden">
-                            <a href="pdfs/biosite-prototype.pdf" target="_blank"><h4>View Prototype</h4></a>
-                        </div>
+
                     </div>
                 </div>
 
-                <div id="project-2" class="project">
-                    <div class="project-container">
+                <div class="close" id="close-pro-2" onclick="closeProject2()"></div>
+
+                <div id="project-2" class="project" onclick="openProject2()">
+
+                    <div class="project-container" id="project-2-container">
+
+
+                        <img src="images/web-231.png" class="hidden project-image" id="project-2-image">
+
                         <h3 class="project-title">Web-230/231</h3>
-                        <p class="hidden"></p>
-                        <div class="button hidden">
+
+                        <p class="hidden project-dis" id="project-2-text">
+                        This project is a repository of all the work I did in Enterprise JavaScript I, in the Fall of 2018. This course covered the fundamentals of writing JavaScript.
+                        </p>
+
+                        <div class="button hidden single-pro-btn" id="project-2-button">
+
                             <a href="https://github.com/jehennessy/web-231" target="_blank"><h4>View Project</h4></a>
                         </div>
+
                     </div>
                 </div>
-                
-                <div id="project-3" class="project">
-                    <div class="project-container">
+
+
+                <div class="close" id="close-pro-3" onclick="closeProject3()"></div>
+
+                <div id="project-3" class="project" onclick="openProject3()">
+
+                    <div class="project-container" id="project-3-container">
+
+
+                        <img src="images/CloudsAfterStorm.jpg" class="hidden project-image" id="project-3-image">
+
                         <h3 class="project-title">Portfolio Project</h3>
-                        <p class="hidden"></p>
-                        <h4 class="hidden">Color Palette</h4>
-                        <img src="images/portfolio-colors.png" alt="color palette for Portfolio" class="hidden">
-                        <div class="button hidden">
+
+                        <p class="hidden project-dis" id="project-3-text">
+                            The Portfolio Project was created in the Spring of 2019. The purpose of the project is to showcase my work that I have done while in school. I wanted to capture my individual style with this project. I chose an earthy plum based color palette. Bellow you will find a link for the prototype.
+                        </p>
+
+                        <h4 class="hidden project-color-header" id="project-3-h4">Color Palette</h4>
+
+                        <img src="images/portfolio-colors.png" alt="color palette for Portfolio" class="hidden project-colors" id="project-3-color">
+
+                        <div class="button single-pro-btn hidden" id="project-3-button" >
+
                             <a href="pdfs/portfolio-prototype.pdf" target="_blank"><h4>View Prototype</h4></a>
                         </div>
                     </div>
                 </div>
 
-                <div id="project-4" class="project">
-                    <div class="project-container">
+
+                <div class="close" id="close-pro-4" onclick="closeProject4()"></div>
+
+                <div id="project-4" class="project" onclick="openProject4()">
+
+                    <div class="project-container" id="project-4-container">
+
+
+                        <img src="images/web-330.png" class="hidden project-image" id="project-4-image">
+
                         <h3 class="project-title">Web-330</h3>
-                        <p class="hidden"></p>
-                        <div class="button hidden">
+
+                        <p class="hidden project-dis" id="project-4-text">
+                        This project is a repository of all the work I did in Enterprise JavaScript II, in the Spring of 2019. This course covers intermediate and advanced concepts of writing JavaScript.
+                        </p>
+
+                        <div class="button hidden single-pro-btn" id="project-4-button">
+
                             <a href="https://github.com/jehennessy/web-330" target="_blank"><h4>View Project</h4></a>
                         </div>
+
                     </div>
                 </div>
 
             </div> <!-- end portfolio container-->
 
         </div> <!-- end work container-->
+
+        <script>
+
+            // start project 1
+           function openProject1() {
+               var bioSite = document.getElementById('project-1');
+                var web230 = document.getElementById('project-2');
+                var portfolio = document.getElementById('project-3');
+                var web330 = document.getElementById('project-4');
+                var image = document.getElementById('project-1-image');
+                var text = document.getElementById('project-1-text');
+                var h4 = document.getElementById('project-1-h4');
+                var colors = document.getElementById('project-1-color');
+                var button = document.getElementById('button-container');
+                var close = document.getElementById('close-pro-1');
+
+
+                document.getElementById('portfolio-container').style.width = "80%";
+                document.getElementById('work-title-container').style.width= "20%";
+                document.getElementById('work-title').style.fontSize="58px";
+                document.getElementById('project-1-container').style.padding = "0";
+
+
+                web230.style.display = "none";
+                portfolio.style.display = "none";
+                web330.style.display = "none";
+
+
+                image.style.display = "block";
+                text.style.display = "block";
+                h4.style.display = "block";
+                colors.style.display = "block";
+                button.style.display = "block";
+               close.style.visibility = "visible";
+
+
+
+                bioSite.style.height = "1300px";
+                bioSite.style.backgroundImage = "linear-gradient(0deg,rgba(175, 170, 170, 1),rgba(175, 170, 170, 1))";
+            };
+
+            function closeProject1() {
+                var bioSite = document.getElementById('project-1');
+                var web230 = document.getElementById('project-2');
+                var portfolio = document.getElementById('project-3');
+                var web330 = document.getElementById('project-4');
+                var image = document.getElementById('project-1-image');
+                var text = document.getElementById('project-1-text');
+                var h4 = document.getElementById('project-1-h4');
+                var colors = document.getElementById('project-1-color');
+                var button = document.getElementById('button-container');
+                var close = document.getElementById('close-pro-1');
+
+                document.getElementById('portfolio-container').style.width = "60%";
+                document.getElementById('work-title-container').style.width= "40%";
+                document.getElementById('work-title').style.fontSize="100px";
+                document.getElementById('project-1-container').style.padding = "25%";
+
+
+                web230.style.display = "block";
+                portfolio.style.display = "block";
+                web330.style.display = "block";
+
+                image.style.display = "none";
+                text.style.display = "none";
+                h4.style.display = "none";
+                colors.style.display = "none";
+                button.style.display = "none";
+                close.style.display = "none";
+
+
+                bioSite.style.height = "500px";
+                bioSite.style.backgroundImage = "linear-gradient(0deg,rgba(175, 170, 170, 0.76),rgba(175, 170, 170, 0.76)), url(images/RickOnBike.jpg)";
+            };
+
+
+            // start project 2
+           function openProject2() {
+               var bioSite = document.getElementById('project-1');
+                var web230 = document.getElementById('project-2');
+                var portfolio = document.getElementById('project-3');
+                var web330 = document.getElementById('project-4');
+                var image = document.getElementById('project-2-image');
+                var text = document.getElementById('project-2-text');
+                var button = document.getElementById('project-2-button');
+                var close = document.getElementById('close-pro-2');
+
+
+                document.getElementById('portfolio-container').style.width = "80%";
+                document.getElementById('work-title-container').style.width= "20%";
+                document.getElementById('work-title').style.fontSize="58px";
+                document.getElementById('project-2-container').style.padding = "0";
+
+
+                bioSite.style.display = "none";
+                portfolio.style.display = "none";
+                web330.style.display = "none";
+
+
+                image.style.display = "block";
+                text.style.display = "block";
+                button.style.display = "block";
+               close.style.visibility = "visible";
+
+
+
+                web230.style.height = "1300px";
+                web230.style.backgroundImage = "linear-gradient(0deg,rgba(175, 170, 170, 1),rgba(175, 170, 170, 1))";
+            };
+
+            function closeProject2() {
+                var bioSite = document.getElementById('project-1');
+                var web230 = document.getElementById('project-2');
+                var portfolio = document.getElementById('project-3');
+                var web330 = document.getElementById('project-4');
+                var image = document.getElementById('project-2-image');
+                var text = document.getElementById('project-2-text');
+                var button = document.getElementById('project-2-button');
+                var close = document.getElementById('close-pro-2');
+
+                document.getElementById('portfolio-container').style.width = "60%";
+                document.getElementById('work-title-container').style.width= "40%";
+                document.getElementById('work-title').style.fontSize="100px";
+                document.getElementById('project-2-container').style.padding = "25%";
+
+
+                bioSite.style.display = "block";
+                portfolio.style.display = "block";
+                web330.style.display = "block";
+
+                image.style.display = "none";
+                text.style.display = "none";
+                button.style.display = "none";
+                close.style.display = "none";
+
+
+                web230.style.height = "500px";
+                web230.style.backgroundImage = "linear-gradient(0deg,rgba(175, 170, 170, 0.76),rgba(175, 170, 170, 0.76)), url(images/web-231.png)";
+            };
+
+
+        // start project 3
+           function openProject3() {
+               var bioSite = document.getElementById('project-1');
+                var web230 = document.getElementById('project-2');
+                var portfolio = document.getElementById('project-3');
+                var web330 = document.getElementById('project-4');
+                var image = document.getElementById('project-3-image');
+                var text = document.getElementById('project-3-text');
+                var h4 = document.getElementById('project-3-h4');
+                var colors = document.getElementById('project-3-color');
+                var button = document.getElementById('project-3-button');
+                var close = document.getElementById('close-pro-3');
+
+
+                document.getElementById('portfolio-container').style.width = "80%";
+                document.getElementById('work-title-container').style.width= "20%";
+                document.getElementById('work-title').style.fontSize="58px";
+                document.getElementById('project-3-container').style.padding = "0";
+
+
+                web230.style.display = "none";
+                bioSite.style.display = "none";
+                web330.style.display = "none";
+
+
+                image.style.display = "block";
+                text.style.display = "block";
+                h4.style.display = "block";
+                colors.style.display = "block";
+                button.style.display = "block";
+               close.style.visibility = "visible";
+
+
+
+                portfolio.style.height = "1300px";
+                portfolio.style.backgroundImage = "linear-gradient(0deg,rgba(175, 170, 170, 1),rgba(175, 170, 170, 1))";
+            };
+
+            function closeProject3() {
+                var bioSite = document.getElementById('project-1');
+                var web230 = document.getElementById('project-2');
+                var portfolio = document.getElementById('project-3');
+                var web330 = document.getElementById('project-4');
+                var image = document.getElementById('project-3-image');
+                var text = document.getElementById('project-3-text');
+                var h4 = document.getElementById('project-3-h4');
+                var colors = document.getElementById('project-3-color');
+                var button = document.getElementById('project-3-button');
+                var close = document.getElementById('close-pro-3');
+
+                document.getElementById('portfolio-container').style.width = "60%";
+                document.getElementById('work-title-container').style.width= "40%";
+                document.getElementById('work-title').style.fontSize="100px";
+                document.getElementById('project-3-container').style.padding = "25%";
+
+
+                web230.style.display = "block";
+                bioSite.style.display = "block";
+                web330.style.display = "block";
+
+                image.style.display = "none";
+                text.style.display = "none";
+                h4.style.display = "none";
+                colors.style.display = "none";
+                button.style.display = "none";
+                close.style.display = "none";
+
+
+                portfolio.style.height = "500px";
+                portfolio.style.backgroundImage = "linear-gradient(0deg,rgba(175, 170, 170, 0.76),rgba(175, 170, 170, 0.76)), url(images/CloudsAfterStorm.jpg)";
+            };
+
+
+            // start project 4
+           function openProject4() {
+               var bioSite = document.getElementById('project-1');
+                var web230 = document.getElementById('project-2');
+                var portfolio = document.getElementById('project-3');
+                var web330 = document.getElementById('project-4');
+                var image = document.getElementById('project-4-image');
+                var text = document.getElementById('project-4-text');
+                var button = document.getElementById('project-4-button');
+                var close = document.getElementById('close-pro-4');
+
+
+                document.getElementById('portfolio-container').style.width = "80%";
+                document.getElementById('work-title-container').style.width= "20%";
+                document.getElementById('work-title').style.fontSize="58px";
+                document.getElementById('project-4-container').style.padding = "0";
+
+
+                bioSite.style.display = "none";
+                portfolio.style.display = "none";
+                web230.style.display = "none";
+
+
+                image.style.display = "block";
+                text.style.display = "block";
+                button.style.display = "block";
+               close.style.visibility = "visible";
+
+
+
+                web330.style.height = "1300px";
+                web330.style.backgroundImage = "linear-gradient(0deg,rgba(175, 170, 170, 1),rgba(175, 170, 170, 1))";
+            };
+
+            function closeProject4() {
+                var bioSite = document.getElementById('project-1');
+                var web230 = document.getElementById('project-2');
+                var portfolio = document.getElementById('project-3');
+                var web330 = document.getElementById('project-4');
+                var image = document.getElementById('project-4-image');
+                var text = document.getElementById('project-4-text');
+                var button = document.getElementById('project-4-button');
+                var close = document.getElementById('close-pro-4');
+
+                document.getElementById('portfolio-container').style.width = "60%";
+                document.getElementById('work-title-container').style.width= "40%";
+                document.getElementById('work-title').style.fontSize="100px";
+                document.getElementById('project-4-container').style.padding = "25%";
+
+
+                bioSite.style.display = "block";
+                portfolio.style.display = "block";
+                web230.style.display = "block";
+
+                image.style.display = "none";
+                text.style.display = "none";
+                button.style.display = "none";
+                close.style.display = "none";
+
+
+                web330.style.height = "500px";
+                web330.style.backgroundImage = "linear-gradient(0deg,rgba(175, 170, 170, 0.76),rgba(175, 170, 170, 0.76)), url(images/web-330.png)";
+            };
+
+
+
+        </script>
 
         <div id="contact-container">
 
@@ -158,7 +506,7 @@
     </body>
 
     <footer>
-        
+
         <div id="footer-heading-container">
             <h1>Thanks For Stopping By!</h1>
         </div>
@@ -168,7 +516,7 @@
             <a href="https://www.instagram.com/theveganthathatestofu/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.youtube.com/channel/UCEE_5Mu3GjTm5GqrquWATUg?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
             <a href="https://www.linkedin.com/in/jordan-hennessy-30a90a135/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/jehennessy" target="_blank"><i class="fab fa-github"></i></a>   
+            <a href="https://github.com/jehennessy" target="_blank"><i class="fab fa-github"></i></a>
         </div>
 
         <div id="copyright-container">
