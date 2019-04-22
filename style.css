@@ -355,6 +355,21 @@ html {
   display: block;
 }
 
+#project-5 {
+  background-image: linear-gradient(0deg,rgba(175, 170, 170, 0.76),rgba(175, 170, 170, 0.76)), url(images/CommitToMaster.png);
+  background-size: cover;
+  width: 100%;
+}
+
+#project-5:hover {
+  background-image: url(images/CommitToMaster.png);
+  color: #D2CCCD;
+}
+
+#project-5:hover #open-pro-5 {
+  display: block;
+}
+
 .hidden {
   display: none;
 }
