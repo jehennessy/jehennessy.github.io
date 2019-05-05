@@ -106,7 +106,7 @@ html {
 
 .nav-item {
   display: inline-block;
-  margin: 20px; 
+  margin: 20px;
 }
 
 .nav-bar {
@@ -529,6 +529,21 @@ html {
   width: auto;
   margin: auto;
   display: block;
+}
+
+/* Video */
+video {
+  margin: auto;
+  display: block;
+}
+
+.video-container {
+  background-color:  #9D9089;
+  padding: 10%;
+}
+
+.video-container .caption {
+  margin-top: 20px;
 }
 
 /* Footer */
