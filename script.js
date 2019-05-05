@@ -374,3 +374,28 @@ function closeProject5() {
   jsQuiz.style.backgroundImage = "linear-gradient(0deg,rgba(175, 170, 170, 0.76),rgba(175, 170, 170, 0.76)), url(images/web-330.png)";
 };
 
+// Gallery
+function openModal1() {
+  document.getElementById('galleryModal').style.display = "block";
+  document.getElementById('openImage1').style.display = "block";
+  document.getElementById('modalClose').style.visibility = "visible";
+  var img = document.getElementById('img1');
+  document.getElementById('caption1').innerHTML = img.alt;
+}
+
+function openModal2() {
+  document.getElementById('galleryModal').style.display = "block";
+  document.getElementById('openImage2').style.display = "block";
+  document.getElementById('modalClose').style.visibility = "visible";
+  var img = document.getElementById('img2');
+  document.getElementById('caption2').innerHTML = img.alt;
+}
+
+
+
+function closeModal() {
+  document.getElementById('galleryModal').style.display = "none";
+  document.getElementById('openImage1').style.display = "none";
+  document.getElementById('openImage2').style.display = "none";
+}
+

@@ -91,6 +91,28 @@ html {
   display: none;
 }
 
+/* Nav */
+.nav-item a{
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-item a:hover, .active a {
+  color: #725E70;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 20px; 
+}
+
+.nav-bar {
+  float: right;
+}
+
 /* Hero */
 #hero-container {
   background-image: linear-gradient(0deg,rgba(210,204,205,0.62),rgba(210,204,205,0.62)), url(images/CloudsAfterStorm.jpg);
@@ -442,6 +464,71 @@ html {
 #contact-social-container a:hover {
   color: #D2CCCD;
   font-size: 38px;
+}
+
+/* Gallery */
+.row > .column {
+  padding: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  height: 400px;
+  overflow: hidden;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  overflow: hidden;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(0deg,rgba(175, 170, 170, 0.76),rgba(175, 170, 170, 0.76));
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.caption {
+  color: #fff;
+  text-align: center;
+}
+
+.close:hover, .close:focus {
+  color: #4C3B48;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.opened-image {
+  display: none;
+  margin: 10%;
+}
+
+.opened-image img {
+  max-height: 100%;
+  width: auto;
+  margin: auto;
+  display: block;
 }
 
 /* Footer */
