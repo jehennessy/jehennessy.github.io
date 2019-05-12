@@ -391,11 +391,28 @@ function openModal2() {
   document.getElementById('caption2').innerHTML = img.alt;
 }
 
+function openModal3() {
+  document.getElementById('galleryModal').style.display = "block";
+  document.getElementById('openImage3').style.display = "block";
+  document.getElementById('modalClose').style.visibility = "visible";
+  var img = document.getElementById('img3');
+  document.getElementById('caption3').innerHTML = img.alt;
+}
+
+function openModal4() {
+  document.getElementById('galleryModal').style.display = "block";
+  document.getElementById('openImage4').style.display = "block";
+  document.getElementById('modalClose').style.visibility = "visible";
+  var img = document.getElementById('img4');
+  document.getElementById('caption4').innerHTML = img.alt;
+}
 
 
 function closeModal() {
   document.getElementById('galleryModal').style.display = "none";
   document.getElementById('openImage1').style.display = "none";
   document.getElementById('openImage2').style.display = "none";
+  document.getElementById('openImage3').style.display = "none";
+  document.getElementById('openImage4').style.display = "none";
 }
 
