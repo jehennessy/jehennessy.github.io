@@ -407,6 +407,22 @@ function openModal4() {
   document.getElementById('caption4').innerHTML = img.alt;
 }
 
+function openModal5() {
+  document.getElementById('galleryModal').style.display = "block";
+  document.getElementById('openImage5').style.display = "block";
+  document.getElementById('modalClose').style.visibility = "visible";
+  var img = document.getElementById('img5');
+  document.getElementById('caption5').innerHTML = img.alt;
+}
+
+function openModal6() {
+  document.getElementById('galleryModal').style.display = "block";
+  document.getElementById('openImage6').style.display = "block";
+  document.getElementById('modalClose').style.visibility = "visible";
+  var img = document.getElementById('img6');
+  document.getElementById('caption6').innerHTML = img.alt;
+}
+
 
 function closeModal() {
   document.getElementById('galleryModal').style.display = "none";
@@ -414,5 +430,7 @@ function closeModal() {
   document.getElementById('openImage2').style.display = "none";
   document.getElementById('openImage3').style.display = "none";
   document.getElementById('openImage4').style.display = "none";
+  document.getElementById('openImage5').style.display = "none";
+  document.getElementById('openImage6').style.display = "none";
 }
 
