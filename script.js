@@ -423,6 +423,22 @@ function openModal6() {
   document.getElementById('caption6').innerHTML = img.alt;
 }
 
+function openModal7() {
+  document.getElementById('galleryModal').style.display = "block";
+  document.getElementById('openImage7').style.display = "block";
+  document.getElementById('modalClose').style.visibility = "visible";
+  var img = document.getElementById('img7');
+  document.getElementById('caption7').innerHTML = img.alt;
+}
+
+function openModal8() {
+  document.getElementById('galleryModal').style.display = "block";
+  document.getElementById('openImage8').style.display = "block";
+  document.getElementById('modalClose').style.visibility = "visible";
+  var img = document.getElementById('img8');
+  document.getElementById('caption8').innerHTML = img.alt;
+}
+
 
 function closeModal() {
   document.getElementById('galleryModal').style.display = "none";
@@ -432,5 +448,7 @@ function closeModal() {
   document.getElementById('openImage4').style.display = "none";
   document.getElementById('openImage5').style.display = "none";
   document.getElementById('openImage6').style.display = "none";
+  document.getElementById('openImage7').style.display = "none";
+  document.getElementById('openImage8').style.display = "none";
 }
 
