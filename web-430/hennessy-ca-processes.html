@@ -17,20 +17,31 @@
 
   <body>
 
-    <div id="hero-container">
-      <div class="nav-bar">
+    <div class="hero-container-internal">
+<div class="nav-bar">
         <ul class="nav">
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="/">Home</a>
           </li>
-          <li class="nav-item">
-            <a href="/web-335/hennessy-diagrams.html">Diagrams</a>
+          <li class="nav-item" id="mean-open">
+            <a href="">Full Stack MEAN Apps</a>
+            <ul class="drop-down">
+              <li class="nav-item">
+                <a href="https://hennessy-nodequiz.herokuapp.com/#/session/login" target="_blank">NodeQuiz - Production</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://github.com/jehennessy/hennessy-nodequiz" target="_blank">NodeQuiz - Source Code</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://bobscomputer.herokuapp.com/#/session/login" target="_blank">Bob's Computer - Production</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://github.com/drcousar/BobsComputer" target="_blank">Bob's Computer - Source Code</a>
+              </li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a href="https://github.com/jehennessy/web-425/" target="_blank">Web 425</a>
-          </li>
-          <li class="nav-item active" id="presentation-open">
-              <a href="">Presentations</a>
+          <li class="nav-item" id="api-presentation-open">
+              <a href="">API Presentations</a>
             <ul class="drop-down">
               <li class="nav-item">
                 <a href="/web-420/hennessy-rest.html">REST</a>
@@ -56,6 +67,11 @@
               <li class="nav-item">
                 <a href="/web-420/hennessy-oath-security.html">OAuth</a>
               </li>
+            </ul>
+          </li>
+          <li class="nav-item" id="dev-presentation-open">
+            <a href="">Dev Presentations</a>
+            <ul class="drop-down">
               <li class="nav-item">
                 <a href="/web-430/hennessy-tech-value-stream.html">Tech Value Stream</a>
               </li>
@@ -85,12 +101,17 @@
               </li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a href="https://github.com/jehennessy/web-425/" target="_blank">Web 425</a>
+          </li>
+          <li class="nav-item">
+            <a href="/web-335/hennessy-diagrams.html">Diagrams</a>
+          </li>
         </ul>
       </div> <!-- End Navigation -->
-      <div id="heading-container">
-        <h2>Web Developer</h2>
-          <h1>Jordan Hennessy</h1>
-          <h3>Presentations - DevOps</h3>
+      <div class="heading-container-internal">
+        <h2>Change Approval Process</h2>
+        <h1>Presentations</h1>
       </div>
 
     </div> <!-- end hero container -->
